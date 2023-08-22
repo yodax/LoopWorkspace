@@ -41,8 +41,7 @@ jobs:
           dexcom_upload_readings \
           customtypeone_looppatches \
           2002 \
-          1988 \
-          2008
+          algorithm_experiments
           
           # the final customization listed above CANNOT have a continuation character "\"
           # more customizations can be pasted after this line
