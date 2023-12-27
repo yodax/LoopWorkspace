@@ -60,7 +60,7 @@ jobs:
           # 2008
           
           # This patch increases the sensitivity limit from a MAX of 500 mg/dl/U to 1000 mg/dl/U
-          curl https://github.com/yodax/LoopKit/commit/02cbf79765b423e8325a768a5e876c355eff1127.patch | git apply -v --directory=Module
+          curl https://github.com/yodax/LoopKit/commit/02cbf79765b423e8325a768a5e876c355eff1127.patch | git apply -v --directory=LoopKit
         
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
