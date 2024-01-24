@@ -61,6 +61,11 @@ jobs:
           
           # This patch increases the sensitivity limit from a MAX of 500 mg/dl/U to 2000 mg/dl/U
           curl https://github.com/yodax/LoopKit/commit/94395e58f9e948f7320d35ef00ea996bf184544c.patch | git apply -v --directory=LoopKit
+
+          # This patch adds a new Novolog insuline type with a DIA of 8 hours
+          curl https://github.com/yodax/LoopKit/commit/645732de73c99a2a98237672157f7e94ae628371.patch | git apply -v --directory=LoopKit
+          curl https://github.com/yodax/LoopKit/commit/248475d10748875106e50272817f2bcf10f8fd73.patch | git apply -v --directory=LoopKitUI
+
         
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
