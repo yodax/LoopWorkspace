@@ -63,8 +63,10 @@ jobs:
           curl https://github.com/yodax/LoopKit/commit/94395e58f9e948f7320d35ef00ea996bf184544c.patch | git apply -v --directory=LoopKit
 
           # This patch adds a new Novolog insuline type with a DIA of 8 hours
-          curl https://github.com/yodax/LoopKit/commit/645732de73c99a2a98237672157f7e94ae628371.patch | git apply -v --directory=LoopKit
-          curl https://github.com/yodax/LoopKit/commit/248475d10748875106e50272817f2bcf10f8fd73.patch | git apply -v --directory=LoopKit
+          curl https://github.com/yodax/LoopKit/commit/fe065a94ae8c279846532df399fb536d05da6ac7.patch | git apply -v --directory=LoopKit
+          curl https://github.com/yodax/Loop/commit/458b9bc746cec8c783892bc9c29fb24a4c33bece.patch | git apply -v --directory=Loop
+          curl https://github.com/yodax/TidepoolKit/commit/f553bf0638c9a54646bf08441be82c0467138da5.patch | git apply -v --directory=TidepoolKit
+          curl https://github.com/yodax/TidepoolService/commit/832eaa70aa8b78737596511044b665f9c1715972.patch | git apply -v --directory=TidepoolService
 
         
       # Patch Fastlane Match to not print tables
