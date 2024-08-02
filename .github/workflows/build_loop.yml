@@ -286,15 +286,6 @@ jobs:
                dexcom_upload_readings \
                now_line \
                2002
-          
-          # This patch increases the sensitivity limit from a MAX of 500 mg/dl/U to 2000 mg/dl/U
-               curl https://github.com/yodax/LoopKit/commit/94395e58f9e948f7320d35ef00ea996bf184544c.patch | git apply -v --directory=LoopKit
-
-          # This patch adds a new Novolog insuline type with a DIA of 8 hours
-               curl https://github.com/yodax/Loop/commit/458b9bc746cec8c783892bc9c29fb24a4c33bece.patch | git apply -v --directory=Loop
-               curl https://github.com/yodax/TidepoolKit/commit/5ac8e525016dd1fbe0fa24429fe1942eedc6dba3.patch | git apply -v --directory=TidepoolKit
-               curl https://github.com/yodax/LoopKit/commit/fe065a94ae8c279846532df399fb536d05da6ac7.patch | git apply -v --directory=LoopKit
-               curl https://github.com/yodax/TidepoolService/commit/832eaa70aa8b78737596511044b665f9c1715972.patch | git apply -v --directory=TidepoolService
 
           # the final customization listed above CANNOT have a continuation character "\"
           # more customizations can be pasted after this line          
